@@ -1,0 +1,62 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nombre": "Pedro Martínez",
+      "correo": "pedro.martinez@example.com",
+      "telefono": "+57 3101112233",
+      "rol": "Administrador",
+      "activo": true,
+      "username": "pedro",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "nombre": "Luisa Gómez",
+      "correo": "luisa.gomez@example.com",
+      "telefono": "+57 3012223344",
+      "rol": "Usuario",
+      "activo": true,
+      "username": "luisa",
+      "password": "5678"
+    },
+    {
+      "id": "3",
+      "nombre": "Jorge Rojas",
+      "correo": "jorge.rojas@example.com",
+      "telefono": "+57 3213334455",
+      "rol": "Editor",
+      "activo": false,
+      "username": "jorge",
+      "password": "9999"
+    },
+    {
+      "id": "dac8",
+      "nombre": "Mario",
+      "correo": "granadoscardenasm08@gmail.com",
+      "telefono": "3204748635",
+      "password": "1234577",
+      "rol": "Usuario",
+      "activo": true
+    },
+    {
+      "id": "bba6",
+      "nombre": "Juan",
+      "correo": "juanis2007237@gmail.com",
+      "telefono": "3104849626",
+      "password": "2727",
+      "rol": "Usuario",
+      "activo": true
+    },
+    {
+      "id": "0aaa",
+      "username": "LuisG",
+      "nombre": "Luis Miguel",
+      "correo": "luismiguelgranados6@gmail.com",
+      "telefono": "3104849626",
+      "password": "2424",
+      "rol": "Usuario",
+      "activo": true
+    }
+  ]
+}
