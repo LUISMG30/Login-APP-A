@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from 'src/app/modules/interfaces/user-interface';
 import { LoginService } from 'src/app/modules/login/services/login.service';
 
 @Component({
@@ -12,7 +13,9 @@ export class RegistroComponent {
   nombre: string = '';
   correo: string = '';
   telefono: string = '';
-  password: string = '';
+  user: User | undefined
+  isLogued: boolean = false;
+  password: any;
 
   constructor(
     private router: Router,
@@ -20,24 +23,11 @@ export class RegistroComponent {
   ) {}
 
   registrar() {
-    if (!this.username || !this.nombre || !this.correo || !this.telefono || !this.password) {
-      alert('Todos los campos son obligatorios');
-      return;
-    }
 
-    const nuevoUsuario = {
-      username: this.username,
-      nombre: this.nombre,
-      correo: this.correo,
-      telefono: this.telefono,
-      password: this.password,
-      rol: 'Usuario',
-      activo: true
-    };
-
-    this.loginService.registrarUsuario(nuevoUsuario).subscribe(() => {
+    this.loginService.registrarUsuario(this.user).subscribe(() => {
       alert('Registro exitoso');
       this.router.navigate(['/']);
+      this.isLogued = true;
     }, (error: any) => {
       console.error('Error al registrar el usuario:', error);
       alert('Error al registrar el usuario');

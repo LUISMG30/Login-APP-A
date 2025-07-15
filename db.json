@@ -57,6 +57,16 @@
       "password": "2424",
       "rol": "Usuario",
       "activo": true
+    },
+    {
+      "id": "4ad6",
+      "username": "mario123",
+      "nombre": "mario granados",
+      "correo": "luismiguelgranados6@gmail.com",
+      "telefono": "3104849626",
+      "password": "2004Marzo",
+      "rol": "Usuario",
+      "activo": true
     }
   ]
 }

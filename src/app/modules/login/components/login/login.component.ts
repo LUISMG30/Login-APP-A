@@ -32,7 +32,8 @@ export class LoginComponent {
         localStorage.setItem('Token', JSON.stringify(tokenData));
 
         alert('Inicio de sesión exitoso');
-        this.router.navigate(['/session']);
+        this.router.navigate(['/']);
+        this.loginService.setIsLogued(true);
       } else {
         alert('Usuario o contraseña incorrectos');
       }

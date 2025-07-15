@@ -36,7 +36,7 @@ export class NavbarComponent implements OnInit {
 
   cerrarSesion() {
     localStorage.removeItem('Token');
-    this.router.navigate(['/']);
+    this.router.navigate(['/a']);
   }
 }
 

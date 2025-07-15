@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
 
 const routes: Routes = [
   {
@@ -7,6 +8,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./modules/home/home.module').then((m) => m.HomeModule),
   },
+  {path: 'home', component:NavbarComponent},
   {
     path: 'login',
     loadChildren: () =>
@@ -16,11 +18,6 @@ const routes: Routes = [
     path: 'registro',
     loadChildren: () =>
       import('./modules/registro/registro.module').then((m) => m.RegistroModule),
-  },
-  {
-    path: 'session',
-    loadChildren: () =>
-      import('./modules/sesion/sesion.module').then((m) => m.SesionModule),
   },
   {
     path: '**',
